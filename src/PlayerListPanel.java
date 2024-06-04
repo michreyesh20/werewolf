@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class PlayerListPanel extends JPanel {
     public PlayerListPanel() {
