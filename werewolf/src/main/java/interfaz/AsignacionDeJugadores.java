@@ -4,6 +4,8 @@
  */
 package interfaz;
 
+import com.example.App;
+
 /**
  *
  * @author davidflores
@@ -159,7 +161,9 @@ public class AsignacionDeJugadores extends javax.swing.JFrame {
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         // TODO add your handling code here:
         InicioPrincipal btnVolverObj = new InicioPrincipal();
-        btnVolverObj.show();
+        //btnVolverObj.show(true); --no funciona correctamente, se debe usar setVisible
+        btnVolverObj.setVisible(true);
+        App.sendMessage("Volviendo al menu principal");
         
         dispose();
     }//GEN-LAST:event_btnVolverActionPerformed
