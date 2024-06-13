@@ -11,16 +11,16 @@ public class MyClientEndpoint {
 
     @OnOpen
     public void onOpen(Session session) {
-        System.out.println("Client connected ... " + session.getId());
+        System.out.println("Cliente conectado ... " + session.getId());
     }
 
     @OnClose
     public void onClose(Session session) {
-        System.out.println("Client disconnected ... " + session.getId());
+        System.out.println("Cliente desconectado ... " + session.getId());
     }
 
     @OnMessage
     public void onMessage(String message, Session session) {
-        System.out.println("Client received: " + message);
+        System.out.println("Mensaaje recibido: " + message);
     }
 }

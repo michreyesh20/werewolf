@@ -134,7 +134,7 @@ public class ConfiguracionMenu extends javax.swing.JFrame {
         });
         jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 680, -1, -1));
 
-        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/fondoInicio1.jpeg"))); // NOI18N
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/fondoInicio1.jpeg"))); // NOI18N
         fondo.setMaximumSize(new java.awt.Dimension(1080, 720));
         fondo.setMinimumSize(new java.awt.Dimension(1080, 720));
         fondo.setPreferredSize(new java.awt.Dimension(1080, 720));

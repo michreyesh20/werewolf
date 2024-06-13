@@ -55,7 +55,7 @@ public class ComoJugar extends javax.swing.JFrame {
         });
         jPanel1.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 680, -1, -1));
 
-        fondoConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/fondoInicio1.jpeg"))); // NOI18N
+        fondoConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/fondoInicio1.jpeg"))); // NOI18N
         jPanel1.add(fondoConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

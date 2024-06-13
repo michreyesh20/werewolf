@@ -44,10 +44,10 @@ public class webSocketServer {
     }
 
     public static void main(String[] args) {
-        Server server = new Server("189.163.76.167", 8080, "/websockets", null, webSocketServer.class);
+        Server server = new Server("localhost", 8080, "/websockets", null, webSocketServer.class);
         try {
             server.start();
-            System.out.println("Server started at ws://189.163.76.167:8080/websockets/werewolf");
+            System.out.println("Server started at ws://localhost:8080/websockets/werewolf");
 
             // Start a new thread to read messages from the terminal and send to clients
             new Thread(() -> {

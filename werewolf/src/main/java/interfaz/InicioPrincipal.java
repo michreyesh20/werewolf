@@ -77,7 +77,7 @@ public class InicioPrincipal extends javax.swing.JFrame {
         });
         jPanel1.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 650, -1, -1));
 
-        fondoInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/fondoInicio1.jpeg"))); // NOI18N
+        fondoInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/fondoInicio1.jpeg"))); // NOI18N
         jPanel1.add(fondoInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1500, 720));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
