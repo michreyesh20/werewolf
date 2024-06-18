@@ -8,16 +8,20 @@
     <h1>WebSocket Client</h1>
     <input type="text" id="mensaje">
     <button id="enviar">Enviar</button>
+    <div id="mensajes" style="margin-top: 20px; border: 1px solid #000; padding: 10px; max-height: 300px; overflow-y: scroll;">
+        <h2>Mensajes del servidor:</h2>
+    </div>
+
     <script>
         const ws = new WebSocket("ws://localhost:8080/websockets/werewolf");
 
-        // ws.onopen = () => {
-        //     console.log("Connected to server");
-        //     ws.send("Hello, server!");
-        // };
-
+        // Mostrar mensajes en el elemento "mensajes"
         ws.onmessage = (event) => {
             console.log("Message from server:", event.data);
+            const mensajesDiv = document.getElementById("mensajes");
+            const nuevoMensaje = document.createElement("p");
+            nuevoMensaje.textContent = event.data;
+            mensajesDiv.appendChild(nuevoMensaje);
         };
 
         ws.onclose = () => {

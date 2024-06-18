@@ -4,6 +4,8 @@
  */
 package interfaz;
 
+import com.example.App;
+
 /**
  *
  * @author davidflores
@@ -135,7 +137,7 @@ public class AsignacionDeJugadores extends javax.swing.JFrame {
         });
         jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, -1, -1));
 
-        fondoInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/fondoInicio1.jpeg"))); // NOI18N
+        fondoInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaz/fondoInicio1.jpeg"))); // NOI18N
         jPanel1.add(fondoInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1500, 720));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -159,7 +161,9 @@ public class AsignacionDeJugadores extends javax.swing.JFrame {
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         // TODO add your handling code here:
         InicioPrincipal btnVolverObj = new InicioPrincipal();
-        btnVolverObj.show();
+        //btnVolverObj.show(true); --no funciona correctamente, se debe usar setVisible
+        btnVolverObj.setVisible(true);
+        App.sendMessage("Volviendo al menu principal");
         
         dispose();
     }//GEN-LAST:event_btnVolverActionPerformed
